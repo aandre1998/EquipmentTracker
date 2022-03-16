@@ -1,24 +1,37 @@
-import logo from './logo.svg';
+import React, { useState, useEffect } from 'react';
+import { Route, Routes, Link } from 'react-router-dom';
+
+import Typography from '@mui/material/Typography';
+import AddNewLIN from './components/AddNewLIN';
+import DisplayLINs from './components/DisplayLINs';
+import SingleLIN from './components/SingleLIN';
+
+import LINsService from './services/LINs';
+
 import './App.css';
 
-function App() {
+
+const App = () => {
+  const [LINs, setLINs] = useState([]);
+  //const [newLIN, setNewLIN] = useState({});
+
+  useEffect(() => {
+    LINsService.getAll().then(initialLINs => {
+      setLINs(initialLINs);
+    })
+  }, [])
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <Typography variant="h3" sx={{textAlign:'center', marginBottom:'20px'}}>
+        <Link to='/'>MCP Platoon Equipment Tracking</Link>
+      </Typography>
+
+      <Routes>
+        <Route path="/" element={<DisplayLINs LINs={LINs} setLINs={setLINs}/>} />
+        <Route path={':LINparam'} element={<SingleLIN data={LINs}/>} />
+      </Routes>
+    </>
   );
 }
 

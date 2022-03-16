@@ -1,0 +1,106 @@
+{
+  "LINs": [
+    {
+      "LIN": "000000",
+      "LIN_Description": "TENT",
+      "NSN_List": [
+        {
+          "NSN": "8340015834250",
+          "NSN_Description": "TENT",
+          "SN_List": [
+            {
+              "SN": "",
+              "SLOC": "CONNEX 1"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "LIN": "70210N",
+      "LIN_Description": "COMPUTER, MICRO LAP-TOP PORTABLE AC/DC W",
+      "NSN_List": [
+        {
+          "NSN": "702101B000689",
+          "NSN_Description": "COMPUTER, LAPTOP: LATITUDE E5550 DELL",
+          "SN_List": [
+            {
+              "SN": "FX6SW52",
+              "SLOC": "?"
+            },
+            {
+              "SN": "FX9TW52",
+              "SLOC": "?"
+            }
+          ]
+        },
+        {
+          "NSN": "702101C949511",
+          "NSN_Description": "COMPUTER, LAPTOP LATITUDE 5590",
+          "SN_List": [
+            {
+              "SN": "479FZQ2",
+              "SLOC": "Hand Receipt to Supply"
+            },
+            {
+              "SN": "7N9FZQ2",
+              "SLOC": "?"
+            },
+            {
+              "SN": "HWBFZQ2",
+              "SLOC": "Company"
+            }
+          ]
+        },
+        {
+          "NSN": "702101C956075",
+          "NSN_Description": "COMPUTER, HP, PROBOOK 650 G5",
+          "SN_List": [
+            {
+              "SN": "2TK9420JL5",
+              "SLOC": "Home"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "LIN": "A79381",
+      "LIN_Description": "ANTENNA GROUP: OE-254()/GRC",
+      "NSN_List": [
+        {
+          "NSN": "5985010631574",
+          "NSN_Description": "ANT GRP OE-254()/GRC",
+          "SN_List": [
+            {
+              "SN": "1009444950",
+              "SLOC": "CONNEX 2"
+            },
+            {
+              "SN": "1009444955",
+              "SLOC": "CONNEX 2"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "C89480",
+      "LIN": "C89480",
+      "LIN_Description": "CAMO NETS",
+      "NSN_List": []
+    },
+    {
+      "id": "T11111",
+      "LIN": "T11111",
+      "LIN_Description": "TEST SET",
+      "NSN_List": []
+    },
+    {
+      "id": "T11112",
+      "LIN": "T11112",
+      "LIN_Description": "TEST SET",
+      "NSN_List": []
+    }
+  ]
+}
